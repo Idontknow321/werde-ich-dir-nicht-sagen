@@ -1,0 +1,27 @@
+		body {
+	background-image: url("Hintergrund.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ccc;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	background-attachment: fixed;
+}
+		.video-container {
+			display: inline-block;
+			margin: 10px;
+			vertical-align: top;
+		}
+		@media (max-width: 768px) {
+			.video-container {
+				display: block;
+			}
+		}
+
+a {
+	color: #ccc;
+}
+
+a:hover {
+	color: gray;
+}

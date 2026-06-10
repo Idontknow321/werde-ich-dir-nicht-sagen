@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Style.css">
+	<title>Guht</title>
+</head>
+<body>
+	<h1>Videos</h1>
+	<br></br>
+
+	<div class="video-container">
+		<iframe style="border: 3px solid #800080;" width="560" height="315" 
+		src="https://www.youtube-nocookie.com/embed/zdl55cjGhFk?autoplay=1&controls=1&wmode=opaque&rel=0&egm=0&iv_load_policy=3&hd=0" 
+		frameborder="1" allowfullscreen="allowfullscreen"></iframe>
+	</div>
+	
+	<div class="video-container">
+		<iframe style="border: 3px solid #800080;" width="560" height="315" 
+		src="https://www.youtube-nocookie.com/embed/53q6kVX9gjM?autoplay=1&controls=1&wmode=opaque&rel=0&egm=0&iv_load_policy=3&hd=0" 
+		frameborder="1" allowfullscreen="allowfullscreen"></iframe>
+	</div>
+	
+	<div class="video-container">
+		<iframe style="border: 3px solid #800080;" width="560" height="315" 
+		src="https://www.youtube-nocookie.com/embed/A4vsKNpxKvk?autoplay=1&controls=1&wmode=opaque&rel=0&egm=0&iv_load_policy=3&hd=0" 
+		frameborder="1" allowfullscreen="allowfullscreen"></iframe>
+	</div>
+	
+	<br></br>
+	
+	<div class="video-container">
+		<iframe style="border: 3px solid #800080;" width="560" height="315" 
+		src="https://www.youtube-nocookie.com/embed/53q6kVX9gjM?autoplay=1&controls=1&wmode=opaque&rel=0&egm=0&iv_load_policy=3&hd=0" 
+		frameborder="1" allowfullscreen="allowfullscreen"></iframe>
+	</div>
+	
+	<div class="video-container">
+		<iframe style="border: 3px solid #800080;" width="560" height="315" 
+		src="https://www.youtube-nocookie.com/embed/WIRK_pGdIdA?autoplay=1&controls=1&wmode=opaque&rel=0&egm=0&iv_load_policy=3&hd=0" 
+		frameborder="1" allowfullscreen="allowfullscreen"></iframe>
+	</div>
+	
+	<div class="video-container">
+		<iframe style="border: 3px solid #800080;" width="560" height="315" 
+		src="https://www.youtube-nocookie.com/embed/And7tQmvAps?autoplay=1&controls=1&wmode=opaque&rel=0&egm=0&iv_load_policy=3&hd=0" 
+		frameborder="1" allowfullscreen="allowfullscreen"></iframe> 
+	</div>
+	
+	<br></br>
+
+
+		<h1>Zufallsgeneratoren</h1>
+    
+	<br>
+	
+    <!-- Zufallsgenerator 1: Farben -->
+    <h2>Ja/ Nein</h2>
+    <button onclick="generateColor()">Generieren</button>
+    <p id="color"></p>
+    
+    <script>
+      function generateColor() {
+        const colors = ['Ja', 'Nein'];
+        const randomIndex = Math.floor(Math.random() * colors.length);
+        const color = colors[randomIndex];
+        document.getElementById('color').innerHTML = color;
+      }
+    </script>
+    
+    <!-- Zufallsgenerator 2: Tiere -->
+    <h2>Ja/ Nein/ Vielleicht</h2>
+    <button onclick="generateAnimal()">Generieren</button>
+    <p id="animal"></p>
+    
+    <script>
+      function generateAnimal() {
+        const animals = ['Ja', 'Nein', 'Vielleicht'];
+        const randomIndex = Math.floor(Math.random() * animals.length);
+        const animal = animals[randomIndex];
+        document.getElementById('animal').innerHTML = animal;
+      }
+    </script>
+    
+    <!-- Zufallsgenerator 3: Gerichte -->
+    <h2>Zahlen (1 - 10)</h2>
+    <button onclick="generateFood()">Generieren</button>
+    <p id="food"></p>
+    
+    <script>
+      function generateFood() {
+        const foods = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+        const randomIndex = Math.floor(Math.random() * foods.length);
+        const food = foods[randomIndex];
+        document.getElementById('food').innerHTML = food;
+      }
+    </script>
+    
+    <!-- Zufallsgenerator 4: Benutzerdefiniert -->
+    <h2>Benutzerdefiniert</h2>
+    <p>Wörter:</p>
+    <input type="text" id="customList">
+    <br>
+    <br>
+    <button onclick="generateCustom()">Generieren</button>
+    <p id="custom"></p>
+    
+    <script>
+      function generateCustom() {
+        const customList = document.getElementById('customList').value.split(',');
+        const randomIndex = Math.floor(Math.random() * customList.length);
+        const custom = customList[randomIndex];
+        document.getElementById('custom').innerHTML = custom;
+      }
+    </script>
+
+<a href=“Link.html“><img src=“Jesus-Christ-235x352.jpg“ alt="alternativer_text"></a>
+<img src=“Jesus.jpg“>
+<img src=“1280x720.jpg“ width="100" heigth="200">
+
+Das Bild eines Lehrers, der Ziegen füttert und eine verblüffende Ähnlichkeit mit Jesus hat, erinnert uns daran, dass wir uns um die Natur und Tiere kümmern müssen. 
+Der Lehrer ist ein Symbol für die Art von Führungsperson, die die Welt braucht: 
+jemand, der bereit ist, anderen zu helfen und zu teilen, unabhängig von Unterschieden. 
+Das Bild zeigt auch, dass es immer noch gute Menschen gibt, die bereit sind, anderen zu helfen und sich um sie zu kümmern.
+
+  </body>
+</html>
